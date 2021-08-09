@@ -1,0 +1,78 @@
+{% extends 'core/base.html' %}
+ 
+ {% block content %}
+ {% load static %}
+
+    <div class="fondo-sobremi">
+            <div class="titulo">
+                <h2>Sobre Mí</h2>
+            </div>
+        <div class="texto-imagen"> 
+        <article class="descripcion">
+            <br>
+            <p>¡Hola! Soy Jorge Matías Yamgotchian , Ingeniero en electrónica, Full Stack developer y estudiante de Tecnicatura Superior en Análisis de Sistemas.
+            Soy un entusiasta de las tecnologías de la información y siempre busco un aprendizaje continuo. En
+            los años en que he estudiado electrónica, he realizado proyectos freelance con Microcontroladores, PIC y Arduino y gracias a esto descubrí que una de mis pasiones es la Programación de computadoras, así que disfruto combinando ambas áreas.
+            Me gustaría trabajar en un proyecto enriquecedor donde pueda aplicar y mejorar mis habilidades.
+            Disfruto adaptándome a los desafíos del equipo y desarrollando proyectos personales.<br>
+            En conclusión, programar es algo que amo!</p>
+        </article>
+            <div>
+            <img class="imagen5" src="{% static 'core/imgEditadas/img5.jpg' %}" alt="Foto de perfil">
+        </div>
+    </div>        
+        <div class="cv">
+            <br>
+        <button><a href="{% static 'core/archives/Jorge M. Yamgotchian CV.pdf' %}" target="_blank">Descargar CV</a></button>
+        </div>
+        </div>
+    </div>
+    <div class="div-tecnologias">
+        <h2 class="tecnologias-titulo">Tecnologías</h2>
+    </div>
+    <section class="seccion">
+        <!--Mas adelante quiero hacer algun efecto explicando brevemente que hice con cada tecnologia-->
+        <div class="tecnologia">
+            <img class="logo-tec"  src="{% static 'core/imgEditadas/html5_logo.png' %}" alt="Logo HTML5"> 
+            <h4 class="logo-nombre">HTML5</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/css3_logo.png' %}" alt="Logo CSS3">
+            <h4 class="logo-nombre">CCS3</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/bootstrap_logo.png' %}" alt="Logo Bootstrap">
+            <h4 class="logo-nombre">Bootstrap</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/js_logo.png' %}" alt="Logo JS">
+            <h4 class="logo-nombre">Javascript</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/vuejs_logo.jpg' %}" alt="Logo VueJS">
+            <h4 class="logo-nombre">VueJS</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/git_logo.png' %}" alt="Logo Git">
+            <h4 class="logo-nombre">GIT</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/assembler_logo.png' %}" alt="Logo Assembler">
+            <h4 class="logo-nombre">Assembler</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/python_logo.png' %}" alt="Logo Python">
+            <h4 class="logo-nombre">Python</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/reactjs_logo.png' %}" alt="Logo ReactJS">
+            <h4 class="logo-nombre">ReactJS</h4>
+        </div>
+        <div class="tecnologia">
+            <img class="logo-tec" src="{% static 'core/imgEditadas/angular_logo.png' %}" alt="Logo Angular">
+            <h4 class="logo-nombre">Angular</h4>
+        </div>
+    </section>
+    
+
+{% endblock %}

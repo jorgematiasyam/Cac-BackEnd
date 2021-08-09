@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+ {% block content %}
+ <link rel="stylesheet" href="{% static 'core/css/whatsapp.css' %}">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+541137028334&text=Hola,%20como%20estas?" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+    <h2 class="titulo">Contacto</h2>
+        <div class="formulario">
+            <form action="enviar.php" method="post">
+                <label for="" class="campo">Nombre y Apellido:</label>
+                <input type="text" name="nombres">
+
+                <label for="" class="campo">E-mail:</label>
+                <input type="email" name="correo" required="required">
+        
+                <label for="" class="campo">Deja tu mensaje</label>
+                <br>
+                <textarea name="mensaje" id="msj"></textarea>
+                <br>
+                <input type="submit" name="enviar" value="Enviar" id="btn-form">
+            </form>
+        </div>
+        <div class="datos-contacto">
+            <h2 class="dato-personal">Jorge Matías Yamgotchian</h2>
+            <h2 class="dato-personal">Buenos Aires - Argentina</h2>
+            <h2 class="dato-personal">Cel: +54 11 3702 8334</h2>
+            <a href="mailto:jorgematiasyam@gmail.com" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>   jorgematiasyam@gmail.com</a>
+            <br>
+            <br>
+            <br>
+            <a href="https://github.com/jorgematiasyam" class="githubtitulo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>   Mi Github</a>    
+        </div>
+        </div>
+
+    
+{% endblock %}

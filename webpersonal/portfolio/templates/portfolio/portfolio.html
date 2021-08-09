@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+ {% block content %}
+ <div class="titulo"><h2>Portfolio</h2></div>
+ <body class="fondo">
+    {% for project in projects %}
+            <div class="proyecto">
+                <img src="{{project.image.url}}" alt="Sitio de ejemplo" class="foto">
+                <div class=texto-proyecto>
+                    <h2 class = "col">{{project.title}}</h2>
+                    <p class="descripcion">{{project.description}}</p>
+                    {% if project.link %}
+                    <a href="{{project.link}}" target = "_blank">Más información</a>
+                    {% endif %}
+            </div>
+            </div>
+    {% endfor %}
+</body>
+{% endblock %}

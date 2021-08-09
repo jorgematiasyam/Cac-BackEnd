@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{%load static %}
+
+{% block content %} 
+           
+<article>
+    <div class = "principal">
+        <h1 class="saludo">&lth1&gt<b id="hola">¡Hola!</b>&lt/h1&gt</h1>
+        <p class="presentacion">Mi nombre es <b id="nombre">Jorge</b>, soy ingeniero en electrónica y desarrollador Full Stack</p>
+    </div>
+    <div class="btn">
+       <button class="btn-conoceme"><a href="{% url 'about' %}">Conoceme</a></button> 
+    </div>
+</article>
+<div class="frase-content">
+    <p class="frase"><i class="fa fa-heart-o" aria-hidden="true"></i>  Diseña una vida que ames!  </p>
+</div>
+{% endblock %}

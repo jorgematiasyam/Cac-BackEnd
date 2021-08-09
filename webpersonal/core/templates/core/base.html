@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMY Dev</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+</head>
+
+<body class="fondo"> 
+    <header>
+        <div class="menu">
+            <div class="logo"><a href="{% url 'home' %}">JMYdev</a></div>           
+            <nav class="navegacion">                          
+                <div class="responsive">
+                    <a href="{% url 'home' %}"><i class="fa fa-home icono" aria-hidden="true"></i><span class="off mostrar">Inicio</span></a>
+                    <a href="{% url 'about' %}"><i class="fa fa-smile-o icono" aria-hidden="true"></i><span class="off mostrar">Sobre mí</span></a>
+                </div>
+                <div class="responsive">
+                    <a href="{% url 'portfolio' %}"><i class="fa fa-code icono" aria-hidden="true"></i><span class="off mostrar">Portfolio</span></a>
+                    <a href="{% url 'contact' %}"><i class="fa fa-phone icono" aria-hidden="true"></i><span class="off mostrar">¡Contactame!</span></a>                
+                </div>
+                </nav>
+            <div class="social">
+                    <a href="https://www.linkedin.com/in/jorge-m-yamgotchian/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/jorge.yamgotchian" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/jmyamgo/?hl=es-la" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>      
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    
+
+    <!--Contenido-->
+    
+</body>
+</html>
+
+

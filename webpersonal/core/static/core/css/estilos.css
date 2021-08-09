@@ -1,0 +1,589 @@
+.fondo{
+    font-family: 'Montserrat' , sans-serif;
+    margin:0px;	   
+    padding: 0; 
+    background: url(../imgEditadas/img3.jpg); 
+    
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+	
+}
+a{
+    text-decoration: none;
+}
+
+/*Comienzo de maquetacion del NAV*/
+    .menu{
+        display: flex; 
+        align-items: center;
+        height: 80px;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        background: rgba(0, 0, 0, 0.1);        
+    }
+    .menu-bar{
+        display:none;
+    }
+        .logo{
+            margin-left: 70px;
+            font-size: 30px;
+            font-family: 'Monoton', cursive;
+        }
+        .logo a{
+            color: turquoise ;
+        }
+
+        .logo a:hover{
+            color: teal;
+            text-decoration: none;
+        }
+
+        .navegacion{
+            margin-left: 200px;
+            margin-right: auto;
+            font-size: 12px;            
+        }
+        .navegacion .responsive{
+            display: inline;
+        }
+        .navegacion a{
+            color: white;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .navegacion a:hover{
+            color: turquoise;
+            text-decoration: none;
+        }
+
+        .social{
+            display:flex;
+            flex: 1 1 auto;
+            margin-left: 200px;
+        }
+        .social a{
+            padding: 0 5px;
+            color: turquoise;
+            font-size:18px;               
+        }
+        .social a:hover{
+            color:teal;
+        }
+
+                    /*INICIO*/
+.principal{
+    align-items: center;
+    padding: 90px;
+}        
+    .saludo{
+        color:white;
+        font-size: 80px;
+        margin-top: 40px;
+        animation-duration: 3s;
+        animation-name: slidein;
+        overflow:hidden
+    }
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+        .presentacion{
+            font-size: 30px;
+            color: antiquewhite;
+            position: relative;
+            letter-spacing: 1.2px;
+        }
+        #nombre{
+            color: turquoise;
+        }
+        #hola{
+            color: turquoise;
+        }
+        .btn{
+            margin-top: -50px;
+            padding-top: 50px; 
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(500%, -50%);
+               
+        }
+        .btn-conoceme{
+            border-radius: 10px;
+            background-color: turquoise;
+            border-color: none;
+            padding: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .btn-conoceme a{
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        .btn-conoceme a:hover{
+            text-decoration: none;
+            color:white;
+        }
+        .btn-conoceme:hover{
+            background-color: teal;
+            border-color: none;    
+        }
+
+/*Frase sobre la vida - efecto*/
+    .frase-content{
+        margin-left: 1000px;
+        margin-top: 45px;
+        padding: 3px;
+    }
+    .frase {
+        overflow: hidden;
+        font-family: Helvetica, sans-serif;
+        white-space: nowrap;
+        font-size: 18px;
+        color: tomato;
+        width: 250px;
+        border-right: 2px solid rgba(0, 0, 0, 0.87);
+        animation: animacionIntro 3.8s steps(23, end), animacionBar 1s step-end infinite;
+        animation-iteration-count: infinite;
+        
+        }
+        
+        .fa-heart-o{
+            color: tomato;
+        }
+        @keyframes animacionIntro {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 250px;
+        }
+        }
+        @keyframes animacionBar {
+        0%,
+        50% {
+            border-color: teal
+        }
+        }
+
+
+                 /*SOBRE MI*/
+.parte-superior{
+    background-color: rgb(29, 29, 29);
+    
+    padding-bottom: 50px;
+}
+.fondo-sobremi{ 
+    margin: 0;
+}
+.titulo{
+    color: turquoise;
+    margin: 40px auto 30px 40px;
+    font-size: 20px;
+}
+    .descripcion{
+        display: flex;
+        color: whitesmoke;
+        letter-spacing: 1.2px;
+        margin: 20px 500px auto 40px;
+    }
+    .imagen5{
+        float:right;
+        width: 20%;
+        height: auto;
+        margin: -250px 200px auto auto;  
+    }
+    .cv{
+    margin: -30px 0 0 40px;
+    padding: 0;
+}
+    .cv a{
+        letter-spacing: 4px;
+        font-weight: bold;
+        color: black;
+    }
+    .cv a:hover{
+        color: black;
+        text-decoration: none;
+    }
+    .cv button{
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .cv button:hover{
+        background-color: lightblue;
+        text-decoration: none;
+    }
+
+.seccion{
+    text-align: center;  
+}
+    .tecnologias-titulo{
+        color: white;
+        margin: 20px auto 20px 40px;
+        font-size: 26px;
+    }
+    .tecnologia{
+        margin: 10px 20px 20px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        border: 1px solid white;
+        padding: 20px;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        
+    }
+    .logo-tec{
+        
+        height:100px;
+        width:auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+    }
+    .tecnologia:hover{
+        filter: blur(8px);
+        
+    }
+    .logo-nombre{
+        font-family: cursive;
+        font-size: 16px;
+        color: white;
+    }
+
+                        /*Portfolio*/
+
+    .proyecto{
+        height: 250px;
+        width: 1400px;
+        margin-left: 250px;
+        padding-bottom: 20px;
+        display: flex;
+        
+    }
+        .foto{
+            width: 200px;
+            height: 200px;
+            
+        }
+        .texto-proyecto{
+            color:white;
+            width: 1000px;
+        }
+        .col{
+            margin-left: 25px;
+        }
+    /*Contactame*/
+
+.formulario{
+    width: 100%;
+    height: auto;
+    
+    padding-left: 150px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+         
+}
+    input{
+        width: 400px;
+        height: 30px;
+        display: block;
+        margin-bottom: 40px;
+    }
+    textarea{
+        width: 400px;
+        height: 150px;
+    }
+
+    #btn-form{
+        width: 100px;
+        background-color: tomato;
+    }
+    #btn-form:hover{
+        background-color: brown;
+    }
+    .campo{
+        color: turquoise;
+    }
+    #submit{
+        justify-content: center;
+    }
+    .datos-contacto{
+        float: right;
+        margin-right: 200px;
+        margin-top: -320px;
+    }
+    .dato-personal{
+        color:cornsilk;
+        font-weight: normal;
+    }
+    .mail{
+        color:cornsilk;
+        font-weight: normal;
+        font-size: 20px;
+    }
+        .mail:hover{
+            text-decoration: none;
+            color: teal;
+        }
+    .githubtitulo{
+        color:turquoise;
+        font-size: 30px;
+        display: block;
+    }
+        .githubtitulo:hover{
+            text-decoration: none;
+            color: teal;
+        }
+
+            /*RESPONSIVE*/
+
+@media all and (max-width:1190px){
+    
+    .logo{
+        font-size: 30px;
+    }    
+    .off{
+        display:none;
+    }
+    .navegacion{
+        font-size: 30px;
+        margin: auto auto auto 200px;
+    }
+    .btn{
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(100%);
+        margin-left: 300px;
+    }
+    .frase-content{
+        margin-left: 100px;
+    }
+    .imagen5{
+        margin-right: 150px;
+    }
+    
+    input{
+        width: 290px;
+        height: 30px;
+        margin-bottom: 40px;
+    }
+    textarea{
+        width: 290px;
+        height: 150px;
+    }
+    .dato-personal{
+        font-size: 19px;
+        font-weight: normal;
+    }
+    .mail{
+        font-weight: normal;
+        font-size: 19px;
+        text-decoration: none;
+    }
+    .mail a:hover{
+        text-decoration: none;
+        color: deepskyblue;
+    }
+    .githubtitulo{
+        font-size: 30px;
+    }
+    .githubtitulo a:hover{
+        color: deepskyblue;
+    }
+
+
+@media all and (max-width:1000px){
+    .proyecto{
+        display: flex;
+        margin-bottom:110px;
+        margin-left: 100px;
+    }
+    .texto-proyecto{
+        margin-left: -40px;
+        width: 700px;
+    }
+            .dato-personal{
+                font-size: 19px;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+            .mail{
+                font-weight: normal;
+                font-size: 19px;
+            }
+            .githubtitulo{
+                font-size: 30px;
+            }
+
+}
+@media all and (max-width:920px){
+
+    .social{
+        margin-left: 100px;
+    }
+    .navegacion{
+        font-size: 20px;
+        margin-left: 80px;
+    }
+    .saludo{
+        font-size: 30px;
+    }
+    .imagen5{
+        float:left;
+        margin-left: 200px;
+        display: none;
+        width: 10%;
+        height: auto;
+    }
+    .descripcion{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cv{
+        margin-left: 250px;
+        margin-right: auto;
+    }
+    .proyecto{
+        display: flex;
+        margin-bottom:110px;
+        margin-left: 100px;
+    }
+    .texto-proyecto{
+        margin-left: -40px;
+        width: 100px;
+    }
+    .descripcion{
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    .datos-contacto{
+        float:left;
+        margin-top: 80px;
+        margin-left: 150px;
+        padding-bottom: 50px;
+    }
+}
+    .proyecto{
+        display: flex;
+        margin-bottom: 50px;
+        margin-left: 100px;
+    }
+    .texto-proyecto{
+        margin-left: 10px;
+        width: 1000px;
+    }
+
+}
+@media all and (max-width:800px){
+    .btn{
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(100%);
+        margin-left: 200px;
+    }
+    .cv{
+        float:left;
+    }
+    .imagen5{
+        display: none;
+    }
+    .tecnologias-titulo{
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(100%);
+        margin-left: 200px;
+    }
+    .proyecto{
+        display: block;
+        margin-bottom:110px;
+        margin-left: 100px;
+    }
+    .texto-proyecto{
+        margin-left: -40px;
+        width: 800px;
+    }
+    .descripcion{
+        width: 600px;
+        margin-left: 40px;
+    }
+}
+@media all and (max-width:700px){
+    .btn{
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(100%);
+        margin-left: 100px;
+    }
+
+    .navegacion .responsive{
+        display:inline-block;
+    }
+    .imagen5{
+        display: none;
+    }
+    .tecnologias-titulo{
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(100%);
+        margin-left: 200px;
+    }
+    .proyecto{
+        display: block;
+        margin-bottom:110px;
+        margin-left: 100px;
+        width: 1000px;
+    }
+    .texto-proyecto{
+        margin-left: -40px;
+        width: 800px;
+    }
+    .descripcion{
+        width: 500px;
+        margin-left: 40px;
+    }
+}
+@media all and (max-width:600px){
+
+    .navegacion{
+        margin-left: 50px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .social{
+        margin-left: 70px;
+    }
+    .navegacion .responsive{
+        display: inline-block;
+    }
+    .cv{
+        margin-left: 150px;
+        margin-right: auto;
+    }
+    .imagen5{
+        display: none;
+    }
+    .tecnologias-titulo{
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(100%);
+            margin-left: 200px;
+    }
+    .proyecto{
+        display: block;
+        margin-bottom:110px;
+    }
+    .texto-proyecto{
+        width: 700px;
+    }
+    .descripcion{
+        width: 400px;
+        margin-left: 40px;
+    }
+}
+
+
